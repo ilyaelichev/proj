@@ -1,0 +1,14 @@
+    // Задание Практика Java. Классы и методы. #1   
+ public static void main(String[] args) {
+        System.out.printf("Результат: %.3f\n", fraction(5.366f));; // Вывод в консоль для себя чтобы отслеживать результат операций
+    }
+
+    public static double fraction(double x) {
+        int number = (int) x;
+        System.out.println(number); // Вывод в консоль для себя чтобы отслеживать результат операций
+        float fractionPart = (float) (x - number);
+        fractionPart = ((int)(fractionPart * 1000)) / 1000.0f;
+        System.out.println(fractionPart); // Вывод в консоль для себя чтобы отслеживать результат операций
+        return fractionPart;
+    }
+}
